@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #151414;
+    background: #F6F4F2;
+    font-family: Roboto;
+}
+
+h1,h3,h4,h5,h6{
+    color: #545454;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*NAVBAR start*/
+.custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="brown" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar a span {
+    color: rgb(191, 123, 134);
+    font-size: 30px;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link::after {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+
+/*NAVBAR end*/
+
+
+
+
+
+
+
+/*Carpusel start*/
+.carousel .carousel-item img {
+    background-image: url(../img/svg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.button {
+    background: #ad7557;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #575656;
+}
+
+/*Carpusel end*/
+
+
+/*style start*/
+.styles .styleBox img {
+    border: 1.5px solid brown;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.styles .art {
+    position: relative;
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+@media(min-width:760px) {
+
+
+    .styles .art::after {
+        content: '';
+        position: absolute;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://img.freepik.com/free-vector/beautiful-floral-mandala-design-creative-ornamental-decorative-element-circle-shape_1302-5692.jpg?t=st=1721762272~exp=1721765872~hmac=22a9f46310a40e9d4720726c78695e2bcc727c52081a85a6fc6d42c78c46b783&w=740');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.03;
+        z-index: -1;
+        transform: rotate(-30deg);
+        mix-blend-mode: multiply;
+    }
+
+    .styles .art::after {
+        top: 0;
+        right: 0;
+        transform-origin: top center;
+    }
+}
+
+
+
+/* style end*/
+
+
+/*Benefit start*/
+.benefits {
+    background: rgb(241, 222, 213,0.2);
+    position: relative;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.benefits .card {
+    border: none;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.benefits .card:hover {
+    transform: translateY(-10px);
+}
+.benefit-icon {
+    font-size: 3rem;
+    color: rgb(247, 209, 216);
+    margin-bottom: 20px;
+}
+@media(min-width:760px) {
+    .benefits::before {
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background-image: url('https://img.freepik.com/free-vector/beautiful-floral-mandala-design-creative-ornamental-decorative-element-circle-shape_1302-5692.jpg?t=st=1721762272~exp=1721765872~hmac=22a9f46310a40e9d4720726c78695e2bcc727c52081a85a6fc6d42c78c46b783&w=740');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.05;
+        z-index: -1;
+        transform: rotate(-45deg);
+        mix-blend-mode: multiply;
+    }
+
+    .benefits::before {
+        top: 0;
+        left: 0;
+        transform-origin: bottom left;
+        margin-top: 13%;
+        margin-bottom: 13%;
+    }
+
+
+}
+/*Benefit end*/
+
+/*Newsletter start*/
+.nwsl .parallax {
+    height: 600px;
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.nwsl .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.nwsl .content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.nwsl .content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.nwsl .content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.nwsl .content form .input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid brown;
+    width: 70%;
+    max-width: 50%;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+/* Newsletter end*/
+
+/*Footer start*/
+.footer {
+    background-color: #153657;
+    color: #e4e3e3;
+    padding: 60px 0;
+}
+
+.footer .quick-links ul li a {
+    color: #e4e3e3;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .quick-links ul li a:hover {
+    color: pink;
+}
+
+.footer .footer-social .icon {
+    font-size: 25px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social .icon:hover {
+    transform: scale(1.2);
+}
+/*Footer end*/
+
+/*Plan start*/
+.pricing  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.pricing  .card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing .card {
+    min-height: 500px;
+    border: none;
+}
+
+
+.pricing .card .btn {
+    width: 200px;
+}
+
+
+.plan .carousel img {
+    margin-top: 0;
+}
+/*Plan end*/
+
+/*Class start*/
+.Banner {
+    background-color: rgba(248, 233, 235, 0.3);
+    padding-bottom: 20px;
+}
+
+.liveClass .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+
+.liveClass .card img {
+    border-radius: 8px;
+}
+
+.liveClass .card .icon {
+    font-size: 1.5rem;
+    color: rgb(247, 209, 216);
+}
+
+.tag {
+    background-color: #f5e8e8;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.instructor-name {
+    color: #0066cc;
+    font-weight: bold;
+}
+/*class end*/
+
+/*Help start*/
+.faq .card {
+    border: none;
+    margin: 10px;
+}
+
+.faq .card button {
+    background: none;
+}
+/*Help end*/
+/*Trainers start*/
+.trainer {
+    background: rgb(241, 222, 213, 0.2);
+
+}
+
+.trainersDetails .card {
+    border: none;
+    background: none;
+}
+
+.trainersDetails .card img {
+    border-radius: 50%;
+}
+
+.t-text {
+    position: relative;
+    padding: 0 20px;
+    color: pink;
+}
+
+.t-text::before,
+.t-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 23%;
+    height: 2px;
+    background-color: pink;
+}
+
+.t-text::before {
+    left: 0;
+}
+
+.t-text::after {
+    right: 0;
+}
+/*Trainers end*/
